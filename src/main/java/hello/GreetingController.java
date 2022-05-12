@@ -16,4 +16,10 @@ public class GreetingController {
         return new Greeting(counter.incrementAndGet(),
                             String.format(template, name));
     }
+
+     @RequestMapping("/movies")
+     public String movies() {
+       return "movies";
+   }
+    
 }
